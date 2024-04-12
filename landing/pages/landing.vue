@@ -23,7 +23,7 @@ max-w-2xl: Максимальна ширина елемента на екран�
     <div class="absolute top-[-54px] left-[754px] rotate-[140.2 deg] w-[786px] h-[532px] bg-[url('/assets/pictures/bg-pink.png')] bg-center bg-cover bg-no-repeat object-cover z-0">
     </div>
   </div>
-    <div class="container flex items-center justify-center">
+    <div class="container flex items-center justify-center 2xl:justify-between">
       <div class="flex items-center justify-center xl:gap-[50px]">
 
         <div class="flex items-center flex-col w-full lg:w-[50%] xl:w-[500px]">
@@ -63,12 +63,13 @@ max-w-2xl: Максимальна ширина елемента на екран�
   <!-- section-1 -->
 
   <!-- section-2 -->
-  <section class="mt-[60px] md:mt-[90px] lg:mt-[180px] relative">
-    <div class="hidden lg:contents">
+  <section class="mt-[60px] md:mt-[90px] lg:mt-[180px] ">
+    <div class="">
+    <!-- <div class="hidden lg:contents">
     <div class="absolute top-[122px] left-[1000px] rotate-[-12deg] w-[786px] h-[462px] bg-[url('/assets/pictures/second-bg-pink.png')] bg-center bg-cover bg-no-repeat object-cover z-0">
     </div>
-  </div>
-    <div class="flex flex-col gap-[30px] md:gap-[60px] xl:flex-row xl:items-center xl:gap-[100px]">
+  </div> -->
+    <div class="2xl:container flex flex-col gap-[30px] md:gap-[60px] xl:flex-row xl:items-center 2xl:justify-between xl:gap-[100px]">
       <img
         class="self-start w-[317px] h-[210px] sm:w-[410px] sm:h-[240px] lg:w-[620px] lg:h-[417px]"
         src="../assets/pictures/devise-info.png"
@@ -77,7 +78,8 @@ max-w-2xl: Максимальна ширина елемента на екран�
         loading="lazy"
       />
 
-      <div class="ml-auto mr-auto xl:ml-0 xl:mr-auto pl-[30px] pr-[30px] w-full xl:w-[640px]">
+      <div class="ml-auto mr-auto xl:ml-0 xl:mr-auto pl-[30px] pr-[30px] w-full xl:w-[640px]
+      2xl:ml-0 2xl:mr-0 2xl:pl-0 2xl:pr-0 ">
 
         <h2
         class="mb-[60px] text-black text-[36px] font-[700] leading-[1.1] text-center
@@ -142,6 +144,7 @@ max-w-2xl: Максимальна ширина елемента на екран�
         </ul>
       </div>
     </div>
+  </div>
   </section>
   <!-- section-2 -->
 
@@ -398,7 +401,7 @@ max-w-2xl: Максимальна ширина елемента на екран�
         </h2>
       <!-- </div> -->
       <div class="flex items-center flex-col xl:flex-col-reverse xl:gap-[62px]">
-      <div class="w-full grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+      <div class="w-full grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-4">
           <SearchCard v-for="index in 8" :key="index" />
       </div>
 
@@ -541,6 +544,11 @@ export default {
   }
 }
 
+@media screen and (max-width: 2200px) {
+  .container {
+    max-width: 1340px;
+  }
+}
 
 .icon {
   width: 42px;
