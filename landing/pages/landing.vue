@@ -145,13 +145,36 @@ max-w-2xl: Максимальна ширина елемента на екран�
   </section>
   <!-- section-2 -->
 
-  
   <!-- section-3 -->
-<section class="mt-[60px] md:mt-[90px] lg:mt-[197px]">
+  <section class="mt-[60px] md:mt-[90px] lg:mt-[197px]">
   <div class="container">
     <div class="flex justify-center items-center flex-col gap-[30px] xl:flex-row">
+      <!-- Центральна колонка -->
+      <div
+        class="flex flex-col items-center pt-[40px] pb-[20px] relative bg-white w-full sm:w-[317px] lg:w-[410px] xl:w-[517px] lg:h-[516px] rounded-[20px] shadow-xs order-1 lg:order-2">
+        <h2
+          class="mb-[21px] text-black text-[36px] lg:text-[48px] font-[700] leading-[1.1] text-center">
+          Креативи
+        </h2>
+        <p
+          class="lg:w-[283px] m-[0_30px_29px_30px]  lg:m-[0_64px_29px_64px] text-black text-[14px] lg:text-body-mobile font-[400] leading-[1.5] text-center">
+          Колекція оголошень для різних ніш та воронок
+        </p>
+        <div class="w-full sm:w-[317px] lg:w-[352px] lg:h-[276px]">
+          <Creatives />
+        </div>
+
+        <div class="absolute bottom-0 left-0 w-[36px] h-[36px] lg:w-[56px] lg:h-[56px]">
+          <ArrowUpRight class="absolute w-[36px] lg:w-[56px] h-[36px] lg:h-[56px] 
+          top-[0rem] ml-[214px]
+          sm:top-[0rem] sm:ml-[272px]
+          md:top-[0rem] md:ml-[272px]
+          lg:top-[-1rem] lg:ml-[317px]" />
+        </div>
+      </div>
+      
       <!-- Ліва колонка -->
-      <div class="w-full sm:w-auto flex flex-col md:flex-row xl:flex-col items-center gap-[30px]">
+      <div class="w-full sm:w-auto flex flex-col md:flex-row xl:flex-col items-center gap-[30px] order-2 lg:order-1">
         <div
           class="shadow-custom-green bg-surface-100 w-full  sm:w-[335px] lg:w-[410px] h-[180px] lg:h-[200px] rounded-[20px] shadow-xs">
           <h3
@@ -178,31 +201,9 @@ max-w-2xl: Максимальна ширина елемента на екран�
           </h1>
         </div>
       </div>
-      <!-- Центральна колонка -->
-      <div
-        class="flex flex-col items-center pt-[40px] pb-[20px] relative bg-white w-full sm:w-[317px] lg:w-[410px] xl:w-[517px] lg:h-[516px] rounded-[20px] shadow-xs">
-        <h2
-          class="mb-[21px] text-black text-[36px] lg:text-[48px] font-[700] leading-[1.1] text-center">
-          Креативи
-        </h2>
-        <p
-          class="lg:w-[283px] m-[0_30px_29px_30px]  lg:m-[0_64px_29px_64px] text-black text-[14px] lg:text-body-mobile font-[400] leading-[1.5] text-center">
-          Колекція оголошень для різних ніш та воронок
-        </p>
-        <div class="w-full sm:w-[317px] lg:w-[352px] lg:h-[276px]">
-          <Creatives />
-        </div>
-
-        <div class="absolute bottom-0 left-0 w-[36px] h-[36px] lg:w-[56px] lg:h-[56px]">
-          <ArrowUpRight class="absolute w-[36px] lg:w-[56px] h-[36px] lg:h-[56px] 
-          top-[0rem] ml-[214px]
-          sm:top-[0rem] sm:ml-[272px]
-          md:top-[0rem] md:ml-[272px]
-          lg:top-[-1rem] lg:ml-[317px]" />
-        </div>
-      </div>
+      
       <!-- Права колонка -->
-      <div class="w-full sm:w-auto flex flex-col md:flex-row xl:flex-col items-center gap-[30px]">
+      <div class="w-full sm:w-auto flex flex-col md:flex-row xl:flex-col items-center gap-[30px] order-3">
         <div
           class="shadow-custom-green bg-surface-100 w-full  sm:w-[335px] lg:w-[410px] h-[180px] lg:h-[200px] rounded-[20px] shadow-xs">
           <h3
@@ -240,10 +241,34 @@ max-w-2xl: Максимальна ширина елемента на екран�
 <section class="mt-[60px] md:mt-[90px] lg:mt-[217px]">
   <div class="container">
     <div class="flex justify-center items-center flex-col gap-[30px] xl:flex-row">
+      <!-- Центральна колонка -->
+      <div
+        class="flex flex-col items-center pt-[40px] pb-[20px] relative bg-white w-full sm:w-[317px] lg:w-[410px] xl:w-[517px] lg:h-[516px] rounded-[20px] shadow-xs order-1 lg:order-2">
+        <h2
+          class="mb-[21px] text-black text-[36px] lg:text-[48px] font-[700] leading-[1.1] text-center">
+          Програми
+        </h2>
+        <p
+          class="lg:w-[283px] m-[0_30px_29px_30px]  lg:m-[0_64px_29px_64px] text-black text-[14px] lg:text-body-mobile font-[400] leading-[1.5] text-center">
+          Відкривайте для себе рекламу по додатках
+        </p>
+        <div class="w-full sm:w-[317px] lg:w-[352px] lg:h-[276px]">
+          <Program />
+        </div>
+
+        <div class="absolute bottom-0 left-0 w-[36px] h-[36px] lg:w-[56px] lg:h-[56px]">
+          <ArrowUpRight class="absolute w-[36px] lg:w-[56px] h-[36px] lg:h-[56px] 
+          top-[0rem] ml-[214px]
+          sm:top-[0rem] sm:ml-[272px]
+          md:top-[0rem] md:ml-[272px]
+          lg:top-[-1rem] lg:ml-[317px]" />
+        </div>
+      </div>
+      
       <!-- Ліва колонка -->
-      <div class="w-full sm:w-auto flex flex-col md:flex-row xl:flex-col items-center gap-[30px]">
+      <div class="w-full sm:w-auto flex flex-col md:flex-row xl:flex-col items-center gap-[30px] order-2 lg:order-1">
         <div
-        class="shadow-custom-orange bg-surface-100 w-full  sm:w-[335px] lg:w-[410px] h-[180px] lg:h-[200px] rounded-[20px] shadow-xs">
+          class="shadow-custom-orange bg-surface-100 w-full  sm:w-[335px] lg:w-[410px] h-[180px] lg:h-[200px] rounded-[20px] shadow-xs">
           <h3
             class="p-[25px_0_25px_30px] lg:p-[31px_0_32px_30px] text-surface-900 text-[18px] font-[700] leading-[2]
               lg:text-[20px] lg:leading-[1.3] text-left">
@@ -256,7 +281,7 @@ max-w-2xl: Максимальна ширина елемента на екран�
         </div>
 
         <div
-        class="shadow-custom-orange bg-surface-100 w-full  sm:w-[335px] lg:w-[410px] h-[180px] lg:h-[200px] rounded-[20px] shadow-xs">
+          class="shadow-custom-orange bg-surface-100 w-full  sm:w-[335px] lg:w-[410px] h-[180px] lg:h-[200px] rounded-[20px] shadow-xs">
           <h3
             class="p-[25px_0_25px_30px] lg:p-[31px_0_32px_30px] text-surface-900 text-[18px] font-[700] leading-[2]
               lg:text-[20px] lg:leading-[1.3] text-left">
@@ -268,32 +293,11 @@ max-w-2xl: Максимальна ширина елемента на екран�
           </h1>
         </div>
       </div>
-      <!-- Центральна колонка -->
-      <div
-      class="flex flex-col items-center pt-[40px] pb-[20px] relative bg-white w-full sm:w-[317px] lg:w-[410px] xl:w-[517px] lg:h-[516px] rounded-[20px] shadow-xs">
-        <h2
-          class="mb-[21px] text-black text-[36px] lg:text-[48px] font-[700] leading-[1.1] text-center">
-          Програми
-        </h2>
-        <p
-          class="lg:w-[283px] m-[0_30px_29px_30px]  lg:m-[0_64px_29px_64px] text-black text-[14px] lg:text-body-mobile font-[400] leading-[1.5] text-center">
-          Відкривайте для себе рекламу по додатках
-        </p>
-        <div class="w-full sm:w-[317px] lg:w-[352px] lg:h-[276px]">
-          <Program />
-        </div>
-        <div class="absolute bottom-0 left-0 w-[36px] h-[36px] lg:w-[56px] lg:h-[56px]">
-          <ArrowUpRight class="absolute w-[36px] lg:w-[56px] h-[36px] lg:h-[56px] 
-          top-[0rem] ml-[214px]
-          sm:top-[0rem] sm:ml-[272px]
-          md:top-[0rem] md:ml-[272px]
-          lg:top-[-1rem] lg:ml-[317px]" />
-        </div>
-      </div>
+      
       <!-- Права колонка -->
-      <div class="w-full flex flex-col md:flex-row xl:flex-col items-center gap-[30px]">
+      <div class="w-full flex flex-col md:flex-row xl:flex-col items-center gap-[30px] order-3">
         <div
-        class="shadow-custom-orange bg-surface-100 w-full  sm:w-[335px] lg:w-[410px] h-[180px] lg:h-[200px] rounded-[20px] shadow-xs">
+          class="shadow-custom-orange bg-surface-100 w-full  sm:w-[335px] lg:w-[410px] h-[180px] lg:h-[200px] rounded-[20px] shadow-xs">
 
           <h3
             class="p-[25px_0_25px_30px] lg:p-[31px_0_32px_30px] text-surface-900 text-[18px] font-[700] leading-[2]
@@ -306,7 +310,7 @@ max-w-2xl: Максимальна ширина елемента на екран�
           </h1>
         </div>
         <div
-        class="shadow-custom-orange bg-surface-100 w-full  sm:w-[335px] lg:w-[410px] h-[180px] lg:h-[200px] rounded-[20px] shadow-xs">
+          class="shadow-custom-orange bg-surface-100 w-full  sm:w-[335px] lg:w-[410px] h-[180px] lg:h-[200px] rounded-[20px] shadow-xs">
           <h3
             class="p-[25px_0_25px_30px] lg:p-[31px_0_32px_30px] text-surface-900 text-[18px] font-[700] leading-[2]
               lg:text-[20px] lg:leading-[1.3] text-left">
@@ -323,6 +327,7 @@ max-w-2xl: Максимальна ширина елемента на екран�
 </section>
 <!-- section-4 -->
 
+                
 <!-- section-5 -->
 <section class="mt-[60px] md:mt-[90px] lg:mt-[192px] p-[40px_0_55px_0] lg:p-[60px_0_62px_0] bg-[#F8F8FA] rounded-[20px]">
   <div class="container">
