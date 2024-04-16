@@ -94,7 +94,7 @@ max-w-2xl: Максимальна ширина елемента на екран�
   </div> -->
 
       <div class="hidden lg:contents 2xl:hidden">
-        <div class="absolute top-[47px] left-[965px] rotate-[90deg] z-0">
+        <div class="absolute top-[47px] left-[977px] rotate-[90deg] z-0">
       <img
         class="self-start w-[786px] h-[462px]"
         src="../assets/pictures/bg-pink.png"
