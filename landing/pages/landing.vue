@@ -16,17 +16,41 @@ max-w-2xl: Максимальна ширина елемента на екран�
 
   <!-- section-1 -->
   <section class="mt-[49px] relative">
-    <div class="hidden lg:contents">
+
+    <!-- <div class="hidden lg:contents">
       <div class="absolute top-[144px] left-[-362px] w-[786px] h-[442px] rotate-[12deg] bg-[url('/assets/pictures/bg-blue.png')] bg-center bg-cover bg-no-repeat object-cover z-0">
       </div>
 
     <div class="absolute top-[-54px] left-[754px] rotate-[140.2 deg] w-[786px] h-[532px] bg-[url('/assets/pictures/bg-pink.png')] bg-center bg-cover bg-no-repeat object-cover z-0">
     </div>
-  </div>
-    <div class="container flex items-center justify-center 2xl:justify-between">
-      <div class="flex items-center justify-center xl:gap-[50px]">
+  </div> -->
 
-        <div class="flex items-center flex-col w-full lg:w-[50%] xl:w-[500px]">
+  <div class="hidden lg:contents 2xl:hidden">
+      <div class="absolute top-[144px] left-[-362px]  rotate-[12deg] z-0">
+        <img
+        class="self-start w-[786px] h-[442px]"
+        src="../assets/pictures/bg-blue.png"
+        alt="devise-info"
+        @click="scrollToTop"
+        loading="lazy"
+      />
+      </div>
+
+    <div class="absolute top-[-54px] left-[754px] rotate-[140.2 deg] z-0">
+      <img
+        class="self-start w-[786px] h-[532px] "
+        src="../assets/pictures/bg-pink.png"
+        alt="devise-info"
+        @click="scrollToTop"
+        loading="lazy"
+      />
+    </div>
+  </div>
+
+    <div class="container lg:flex lg:items-center lg:justify-center 2xl:justify-between">
+      <div class="lg:flex lg:items-center lg:justify-center xl:gap-[15px]">
+
+        <div class="w-full basis-[50%]">
           <h1
           class="mb-[20px] text-black text-[36px] font-[700] leading-[1.1] text-center
           lg:text-[48px]  lg:leading-[1.2] lg:text-left">
@@ -50,9 +74,8 @@ max-w-2xl: Максимальна ширина елемента на екран�
           </button>
         </div>
 
-        
-        <div class="hidden lg:contents lg:w-[50%]">
-          <div class="flex justify-center items-center lg:w-[50%] lg:h-[400px] xl:w-[641px] xl:h-[610px] bg-[url('/assets/pictures/hero.png')] bg-center bg-cover bg-no-repeat object-cover z-10">
+        <div class="hidden lg:contents basis-[50%]">
+          <div class="flex justify-center items-center basis-[50%] lg:h-[400px] xl:h-[610px] bg-[url('/assets/pictures/hero.png')] bg-center bg-cover bg-no-repeat object-cover z-10">
             <Alligator />
           </div>
 
@@ -63,13 +86,25 @@ max-w-2xl: Максимальна ширина елемента на екран�
   <!-- section-1 -->
 
   <!-- section-2 -->
-  <section class="mt-[60px] md:mt-[90px] lg:mt-[180px] ">
+  <section class="section-2 mt-[60px] md:mt-[90px] lg:mt-[180px] relative">
     <div class="">
     <!-- <div class="hidden lg:contents">
     <div class="absolute top-[122px] left-[1000px] rotate-[-12deg] w-[786px] h-[462px] bg-[url('/assets/pictures/second-bg-pink.png')] bg-center bg-cover bg-no-repeat object-cover z-0">
     </div>
   </div> -->
-    <div class="2xl:container flex flex-col gap-[30px] md:gap-[60px] xl:flex-row xl:items-center 2xl:justify-between xl:gap-[100px]">
+
+      <div class="hidden lg:contents 2xl:hidden">
+        <div class="absolute top-[47px] left-[965px] rotate-[90deg] z-0">
+      <img
+        class="self-start w-[786px] h-[462px]"
+        src="../assets/pictures/bg-pink.png"
+        alt="devise-info"
+        @click="scrollToTop"
+        loading="lazy"
+      />
+    </div>
+  </div>
+    <div class="xl:container flex flex-col gap-[30px] md:gap-[60px] xl:flex-row xl:items-center 2xl:justify-between xl:gap-[100px]">
       <img
         class="self-start w-[317px] h-[210px] sm:w-[410px] sm:h-[240px] lg:w-[620px] lg:h-[417px]"
         src="../assets/pictures/devise-info.png"
@@ -163,7 +198,7 @@ max-w-2xl: Максимальна ширина елемента на екран�
           class="lg:w-[283px] m-[0_30px_29px_30px]  lg:m-[0_64px_29px_64px] text-black text-[14px] lg:text-body-mobile font-[400] leading-[1.5] text-center">
           Колекція оголошень для різних ніш та воронок
         </p>
-        <div class="w-full sm:w-[317px] lg:w-[352px] lg:h-[276px]">
+        <div class="w-[250px] sm:w-[317px] lg:w-[352px] lg:h-[276px]">
           <Creatives />
         </div>
 
@@ -255,7 +290,7 @@ max-w-2xl: Максимальна ширина елемента на екран�
           class="lg:w-[283px] m-[0_30px_29px_30px]  lg:m-[0_64px_29px_64px] text-black text-[14px] lg:text-body-mobile font-[400] leading-[1.5] text-center">
           Відкривайте для себе рекламу по додатках
         </p>
-        <div class="w-full sm:w-[317px] lg:w-[352px] lg:h-[276px]">
+        <div class="w-[250px] sm:w-[317px] lg:w-[352px] lg:h-[276px]">
           <Program />
         </div>
 
@@ -298,7 +333,7 @@ max-w-2xl: Максимальна ширина елемента на екран�
       </div>
       
       <!-- Права колонка -->
-      <div class="w-full flex flex-col md:flex-row xl:flex-col items-center gap-[30px] order-3">
+      <div class="w-full sm:w-auto  flex flex-col md:flex-row xl:flex-col items-center gap-[30px] order-3">
         <div
           class="shadow-custom-orange bg-surface-100 w-full  sm:w-[335px] lg:w-[410px] h-[180px] lg:h-[200px] rounded-[20px] shadow-xs">
 
@@ -330,6 +365,8 @@ max-w-2xl: Максимальна ширина елемента на екран�
 </section>
 <!-- section-4 -->
 
+
+
                 
 <!-- section-5 -->
 <section class="mt-[60px] md:mt-[90px] lg:mt-[192px] p-[40px_0_55px_0] lg:p-[60px_0_62px_0] bg-[#F8F8FA] rounded-[20px]">
@@ -340,13 +377,13 @@ max-w-2xl: Максимальна ширина елемента на екран�
     </h2>
 
     <div class="flex flex-col lg:flex-row gap-[40px] lg:gap-[80px] items-end relative">
-      <ArrowBig class="
+      <ArrowBig class=" arrow
       absolute rotate-[-61deg] top-[9.5rem] left-[-0.5rem] w-[272px]
       sm:rotate-[-55deg] sm:top-[9.5rem] sm-[6.5rem] sm:w-[350px]
       md:rotate-[-48deg] md:top-[10.5rem] md:left-[8.5rem] md:w-[460px]
       lg:rotate-[-10deg]  lg:top-[-2.5rem]  lg:left-[6.5rem]" />
 
-      <div class="shadow-custom-green bg-green-700 p-[28px_37px_28px_27px] lg:p-[61px_15px_32px_15px] xl:p-[91px_34px_40px_34px]  w-full  sm:w-[240px] xl:w-[330px] h-[156px] sm:h-[170px] xl:h-[220px] rounded-[20px]">
+      <div class="card-1 shadow-custom-green bg-green-700 p-[28px_37px_28px_27px] lg:p-[61px_15px_32px_15px] xl:p-[91px_34px_40px_34px]  w-full  sm:w-[240px] xl:w-[330px] h-[156px] sm:h-[170px] xl:h-[220px] rounded-[20px]">
         <h3
           class="mb-[16px] xl:mb-[12px] text-white text-[36px] xl:text-[48px] font-[700] leading-[1.1] text-center">
           2.95 + В
@@ -357,7 +394,7 @@ max-w-2xl: Максимальна ширина елемента на екран�
         </p>
       </div>
 
-      <div class="shadow-custom-green p-[40px] sm:p-[110px_20px_40px_20px] lg:p-[113px_40px_36px_40px] xl:p-[171px_50px_40px_51px] bg-white w-full sm:w-[300px]  md:w-[300px] xl:w-[360px] h-[158px] sm:h-[250px] xl:h-[300px] rounded-[20px]">
+      <div class="card-2 shadow-custom-green p-[40px] sm:p-[110px_20px_40px_20px] lg:p-[113px_40px_36px_40px] xl:p-[171px_50px_40px_51px] bg-white w-full sm:w-[300px]  md:w-[300px] xl:w-[360px] h-[158px] sm:h-[250px] xl:h-[300px] rounded-[20px]">
         <h3
           class="mb-[16px] xl:mb-[12px] text-green-700 text-[36px] xl:text-[48px] font-[700] leading-[1.1] text-center">
           1130 + ТВ
@@ -368,8 +405,7 @@ max-w-2xl: Максимальна ширина елемента на екран�
         </p>
       </div>
 
-      <div
-        class="shadow-custom-green p-[30px_15px_20px_15px] xl:p-[30px_60px_29px_60px] flex flex-col items-center bg-[#CAF1D8] w-full sm:w-[360px] xl:w-[440px] h-[293px] sm:h-[316px] lg:h-[350px] xl:h-[398px] rounded-[20px]">
+      <div class="card-3 shadow-custom-green p-[30px_15px_20px_15px] xl:p-[30px_60px_29px_60px] flex flex-col items-center bg-[#CAF1D8] w-full sm:w-[360px] xl:w-[440px] h-[293px] sm:h-[316px] lg:h-[350px] xl:h-[398px] rounded-[20px]">
         <Inspired class="w-[106px] h-[118px] xl:w-[177px] xl:h-[198px] m-[30px_0_17px_0] xl:m-[30px_0_17px_0]" />
         <p
           class="mb-[9px] lg:mb-[20px] w-full md:w-[319px] text-surface-900 text-body-mobile font-[400] leading-[1.5] text-center">
@@ -499,6 +535,7 @@ export default {
   margin-top: 24px;
   margin-bottom: 100px;
 }
+
 .container {
   margin-left: auto;
   margin-right: auto;
@@ -550,6 +587,38 @@ export default {
   }
 }
 
+@media screen and (min-width: 1500px) {
+  .section-2 {
+    display: flex;
+    justify-content: center;
+  }
+
+  .section-2 img {
+    margin-left: auto;
+  }
+
+  .section-2 .ml-auto,
+  .section-2 .mr-auto {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 374px) and (max-width: 639px) {
+  .arrow {
+    left: -8rem;
+    top: 8rem;
+  }
+  .card-1 {
+    width: 232px;
+  }
+  .card-2 {
+    width: 274px;
+  }
+  .card-3 {
+    width: 317px;
+  }
+}
 .icon {
   width: 42px;
   height: 42px;
