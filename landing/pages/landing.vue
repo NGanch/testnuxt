@@ -463,7 +463,7 @@ max-w-2xl: Максимальна ширина елемента на екран�
         </h2>
         <div class="xl:flex xl:flex-col-reverse xl:gap-[62px]">
       <div
-        class="grid grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-3">
+        class="grid grid-cols-1 gap-6 lg:grid-cols-2 xl:grid-cols-3">
 
         <ResponseCard v-for="index in 3" :key="index" />
       </div>
