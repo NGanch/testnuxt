@@ -17,13 +17,6 @@ max-w-2xl: Максимальна ширина елемента на екран�
   <!-- section-1 -->
   <section class="mt-[49px] relative">
 
-    <!-- <div class="hidden lg:contents">
-      <div class="absolute top-[144px] left-[-362px] w-[786px] h-[442px] rotate-[12deg] bg-[url('/assets/pictures/bg-blue.png')] bg-center bg-cover bg-no-repeat object-cover z-0">
-      </div>
-
-    <div class="absolute top-[-54px] left-[754px] rotate-[140.2 deg] w-[786px] h-[532px] bg-[url('/assets/pictures/bg-pink.png')] bg-center bg-cover bg-no-repeat object-cover z-0">
-    </div>
-  </div> -->
 
   <div class="hidden lg:contents 2xl:hidden">
       <div class="absolute top-[144px] left-[-362px]  rotate-[12deg] z-0">
@@ -47,10 +40,10 @@ max-w-2xl: Максимальна ширина елемента на екран�
     </div>
   </div>
 
-    <div class="container lg:flex lg:items-center lg:justify-center 2xl:justify-between">
-      <div class="lg:flex lg:items-center lg:justify-center xl:gap-[15px]">
+    <div class="container">
+      <div class="lg:flex lg:items-center lg:justify-center xl:gap-[15px] 2xl:justify-between">
 
-        <div class="w-full basis-[50%]">
+        <div class="w-full basis-[50%] sm:flex sm:flex-col sm:items-center">
           <h1
           class="mb-[20px] text-black text-[36px] font-[700] leading-[1.1] text-center
           lg:text-[48px]  lg:leading-[1.2] lg:text-left">
@@ -65,7 +58,7 @@ max-w-2xl: Максимальна ширина елемента на екран�
           </p>
 
           <button
-          class="p-[17px_20px] flex justify-center self-auto lg:self-start items-center text-center w-full sm:w-[300px] h-[56px] mr-[8px] px-[20px] py-3
+          class="p-[17px_20px] flex justify-center self-center items-center text-center w-full sm:w-[300px] h-[56px] mr-[8px] px-[20px] py-3
            bg-orange-500 bg-gradient-to-b from-yellow-400 to-orange-500 hover:to-amber-500 rounded-[100px] gap-2.5
         disabled:bg-surface-300 disabled:from-surface-300 disabled:to-surface-300">
            <p class="text-white text-[18px] font-medium font-['Ubuntu'] leading-[1.2] text-center">
@@ -75,7 +68,7 @@ max-w-2xl: Максимальна ширина елемента на екран�
         </div>
 
         <div class="hidden lg:contents basis-[50%]">
-          <div class="flex justify-center items-center basis-[50%] lg:h-[400px] xl:h-[610px] bg-[url('/assets/pictures/hero.png')] bg-center bg-cover bg-no-repeat object-cover z-10">
+          <div class="flex justify-center items-center basis-[50%] lg:h-[500px] xl:h-[610px] bg-[url('/assets/pictures/hero.png')] bg-center bg-cover bg-no-repeat object-cover z-10">
             <Alligator />
           </div>
 
@@ -87,16 +80,12 @@ max-w-2xl: Максимальна ширина елемента на екран�
 
   <!-- section-2 -->
   <section class="section-2 mt-[60px] md:mt-[90px] lg:mt-[180px] relative">
-    <div class="">
-    <!-- <div class="hidden lg:contents">
-    <div class="absolute top-[122px] left-[1000px] rotate-[-12deg] w-[786px] h-[462px] bg-[url('/assets/pictures/second-bg-pink.png')] bg-center bg-cover bg-no-repeat object-cover z-0">
-    </div>
-  </div> -->
+      
 
-      <div class="hidden lg:contents 2xl:hidden">
-        <div class="absolute top-[47px] left-[977px] rotate-[90deg] z-0">
+  <div class="hidden lg:contents 2xl:hidden">
+    <div class="absolute top-[-54px] left-[50%] rotate-[89deg] z-0">
       <img
-        class="self-start w-[786px] h-[462px]"
+        class="self-start w-[786px] h-[532px] "
         src="../assets/pictures/bg-pink.png"
         alt="devise-info"
         @click="scrollToTop"
@@ -104,7 +93,20 @@ max-w-2xl: Максимальна ширина елемента на екран�
       />
     </div>
   </div>
-    <div class="xl:container flex flex-col gap-[30px] md:gap-[60px] xl:flex-row xl:items-center 2xl:justify-between xl:gap-[100px]">
+
+    <!-- <div class="hidden xl:contents 2xl:hidden">
+        <div class="absolute top-[47px] left-[800px] rotate-[90deg] z-0">
+      <img
+        class="w-[786px] h-[462px]"
+        src="../assets/pictures/bg-pink.png"
+        alt="devise-info"
+        @click="scrollToTop"
+        loading="lazy"
+      />
+    </div>
+      </div> -->
+
+      <div class="xl:container flex flex-col gap-[30px] md:gap-[60px] xl:flex-row xl:items-center 2xl:justify-between xl:gap-[100px]">
       <img
         class="self-start w-[317px] h-[210px] sm:w-[410px] sm:h-[240px] lg:w-[620px] lg:h-[417px]"
         src="../assets/pictures/devise-info.png"
@@ -178,8 +180,8 @@ max-w-2xl: Максимальна ширина елемента на екран�
           </li>
         </ul>
       </div>
-    </div>
-  </div>
+      </div>
+
   </section>
   <!-- section-2 -->
 
@@ -188,8 +190,7 @@ max-w-2xl: Максимальна ширина елемента на екран�
   <div class="container">
     <div class="flex justify-center items-center flex-col gap-[30px] xl:flex-row">
       <!-- Центральна колонка -->
-      <div
-        class="flex flex-col items-center pt-[40px] pb-[20px] relative bg-white w-full sm:w-[317px] lg:w-[410px] xl:w-[517px] lg:h-[516px] rounded-[20px] shadow-xs order-1 lg:order-2">
+      <div class="flex flex-col items-center pt-[40px] pb-[20px] relative bg-white w-full sm:w-[317px] lg:w-[407px] lg:h-[516px] rounded-[20px] shadow-xs order-1 lg:order-2">
         <h2
           class="mb-[21px] text-black text-[36px] lg:text-[48px] font-[700] leading-[1.1] text-center">
           Креативи
@@ -213,8 +214,7 @@ max-w-2xl: Максимальна ширина елемента на екран�
       
       <!-- Ліва колонка -->
       <div class="w-full sm:w-auto flex flex-col md:flex-row xl:flex-col items-center gap-[30px] order-2 lg:order-1">
-        <div
-          class="shadow-custom-green bg-surface-100 w-full  sm:w-[335px] lg:w-[410px] h-[180px] lg:h-[200px] rounded-[20px] shadow-xs">
+        <div class="shadow-custom-green bg-surface-100 w-full  sm:w-[335px] lg:w-[350px] xl:w-[410px] h-[180px] lg:h-[200px] rounded-[20px] shadow-xs">
           <h3
             class="p-[25px_0_25px_30px] lg:p-[31px_0_32px_30px] text-surface-900 text-[18px] font-[700] leading-[2]
               lg:text-[20px] lg:leading-[1.3] text-left">
@@ -226,8 +226,7 @@ max-w-2xl: Максимальна ширина елемента на екран�
           </h1>
         </div>
 
-        <div
-          class="shadow-custom-green bg-surface-100 w-full  sm:w-[335px] lg:w-[410px] h-[180px] lg:h-[200px] rounded-[20px] shadow-xs">
+        <div class="shadow-custom-green bg-surface-100 w-full  sm:w-[335px] lg:w-[350px] xl:w-[410px] h-[180px] lg:h-[200px] rounded-[20px] shadow-xs">
           <h3
             class="p-[25px_0_25px_30px] lg:p-[31px_0_32px_30px] text-surface-900 text-[18px] font-[700] leading-[2]
               lg:text-[20px] lg:leading-[1.3] text-left">
@@ -242,8 +241,7 @@ max-w-2xl: Максимальна ширина елемента на екран�
       
       <!-- Права колонка -->
       <div class="w-full sm:w-auto flex flex-col md:flex-row xl:flex-col items-center gap-[30px] order-3">
-        <div
-          class="shadow-custom-green bg-surface-100 w-full  sm:w-[335px] lg:w-[410px] h-[180px] lg:h-[200px] rounded-[20px] shadow-xs">
+        <div class="shadow-custom-green bg-surface-100 w-full  sm:w-[335px] lg:w-[350px] xl:w-[410px] h-[180px] lg:h-[200px] rounded-[20px] shadow-xs">
           <h3
             class="p-[25px_0_25px_30px] lg:p-[31px_0_32px_30px] text-surface-900 text-[18px] font-[700] leading-[2]
               lg:text-[20px] lg:leading-[1.3] text-left">
@@ -255,8 +253,7 @@ max-w-2xl: Максимальна ширина елемента на екран�
           </h1>
         </div>
 
-        <div
-          class="shadow-custom-green bg-surface-100 w-full  sm:w-[335px] lg:w-[410px] h-[180px] lg:h-[200px] rounded-[20px] shadow-xs">
+        <div class="shadow-custom-green bg-surface-100 w-full  sm:w-[335px] lg:w-[350px] xl:w-[410px] h-[180px] lg:h-[200px] rounded-[20px] shadow-xs">
           <h3
             class="p-[25px_0_25px_30px] lg:p-[31px_0_32px_30px] text-surface-900 text-[18px] font-[700] leading-[2]
               lg:text-[20px] lg:leading-[1.3] text-left">
@@ -273,15 +270,12 @@ max-w-2xl: Максимальна ширина елемента на екран�
 </section>
 <!-- section-3 -->
 
-
-
 <!-- section-4 -->
 <section class="mt-[60px] md:mt-[90px] lg:mt-[217px]">
   <div class="container">
     <div class="flex justify-center items-center flex-col gap-[30px] xl:flex-row">
       <!-- Центральна колонка -->
-      <div
-        class="flex flex-col items-center pt-[40px] pb-[20px] relative bg-white w-full sm:w-[317px] lg:w-[410px] xl:w-[517px] lg:h-[516px] rounded-[20px] shadow-xs order-1 lg:order-2">
+      <div class="flex flex-col items-center pt-[40px] pb-[20px] relative bg-white w-full sm:w-[317px] lg:w-[407px] lg:h-[516px] rounded-[20px] shadow-xs order-1 lg:order-2">
         <h2
           class="mb-[21px] text-black text-[36px] lg:text-[48px] font-[700] leading-[1.1] text-center">
           Програми
@@ -305,8 +299,7 @@ max-w-2xl: Максимальна ширина елемента на екран�
       
       <!-- Ліва колонка -->
       <div class="w-full sm:w-auto flex flex-col md:flex-row xl:flex-col items-center gap-[30px] order-2 lg:order-1">
-        <div
-          class="shadow-custom-orange bg-surface-100 w-full  sm:w-[335px] lg:w-[410px] h-[180px] lg:h-[200px] rounded-[20px] shadow-xs">
+        <div class="shadow-custom-orange bg-surface-100 w-full  sm:w-[335px] lg:w-[350px] xl:w-[410px] h-[180px] lg:h-[200px] rounded-[20px] shadow-xs">
           <h3
             class="p-[25px_0_25px_30px] lg:p-[31px_0_32px_30px] text-surface-900 text-[18px] font-[700] leading-[2]
               lg:text-[20px] lg:leading-[1.3] text-left">
@@ -318,8 +311,7 @@ max-w-2xl: Максимальна ширина елемента на екран�
           </h1>
         </div>
 
-        <div
-          class="shadow-custom-orange bg-surface-100 w-full  sm:w-[335px] lg:w-[410px] h-[180px] lg:h-[200px] rounded-[20px] shadow-xs">
+        <div class="shadow-custom-orange bg-surface-100 w-full  sm:w-[335px] lg:w-[350px] xl:w-[410px] h-[180px] lg:h-[200px] rounded-[20px] shadow-xs">
           <h3
             class="p-[25px_0_25px_30px] lg:p-[31px_0_32px_30px] text-surface-900 text-[18px] font-[700] leading-[2]
               lg:text-[20px] lg:leading-[1.3] text-left">
@@ -334,9 +326,7 @@ max-w-2xl: Максимальна ширина елемента на екран�
       
       <!-- Права колонка -->
       <div class="w-full sm:w-auto  flex flex-col md:flex-row xl:flex-col items-center gap-[30px] order-3">
-        <div
-          class="shadow-custom-orange bg-surface-100 w-full  sm:w-[335px] lg:w-[410px] h-[180px] lg:h-[200px] rounded-[20px] shadow-xs">
-
+        <div class="shadow-custom-orange bg-surface-100 w-full  sm:w-[335px] lg:w-[350px] xl:w-[410px] h-[180px] lg:h-[200px] rounded-[20px] shadow-xs">
           <h3
             class="p-[25px_0_25px_30px] lg:p-[31px_0_32px_30px] text-surface-900 text-[18px] font-[700] leading-[2]
               lg:text-[20px] lg:leading-[1.3] text-left">
@@ -347,8 +337,7 @@ max-w-2xl: Максимальна ширина елемента на екран�
             108 + К
           </h1>
         </div>
-        <div
-          class="shadow-custom-orange bg-surface-100 w-full  sm:w-[335px] lg:w-[410px] h-[180px] lg:h-[200px] rounded-[20px] shadow-xs">
+        <div class="shadow-custom-orange bg-surface-100 w-full  sm:w-[335px] lg:w-[350px] xl:w-[410px] h-[180px] lg:h-[200px] rounded-[20px] shadow-xs">
           <h3
             class="p-[25px_0_25px_30px] lg:p-[31px_0_32px_30px] text-surface-900 text-[18px] font-[700] leading-[2]
               lg:text-[20px] lg:leading-[1.3] text-left">
@@ -604,6 +593,13 @@ export default {
   }
 }
 
+@media screen and (min-width: 1280px) and (max-width: 1360px) {
+
+  .creative-card {
+    width: 350px;
+  }
+
+}
 @media screen and (min-width: 374px) and (max-width: 639px) {
   .arrow {
     left: -8rem;
