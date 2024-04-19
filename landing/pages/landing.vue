@@ -76,10 +76,11 @@ max-w-2xl: Максимальна ширина елемента на екран�
   </section>
   <!-- section-1 -->
 
+
   <!-- section-2 -->
   <section class="section-2 mt-[60px] md:mt-[90px] lg:mt-[180px] relative">
       
-    <div class="hidden lg:block absolute top-0 right-0 rotate-[0deg] z-0">
+    <div class="hidden lg:block 2xl:hidden absolute top-0 right-0 rotate-[0deg] z-0">
         <img
           class="self-start w-[786px] h-[532px]"
           src="../assets/pictures/second-bg-pink.png"
@@ -89,16 +90,16 @@ max-w-2xl: Максимальна ширина елемента на екран�
         />
     </div>
 
-      <div class="xl:container flex flex-col gap-[30px] md:gap-[60px] xl:flex-row xl:items-center 2xl:justify-between xl:gap-[100px]">
+      <div class=" flex flex-col gap-[30px] md:gap-[60px] xl:flex-row xl:items-center xl:justify-between ">
       <img
-        class="self-start w-[317px] h-[210px] sm:w-[410px] sm:h-[240px] lg:w-[620px] lg:h-[417px]"
+        class="self-start w-[317px] h-[210px] sm:w-[410px] sm:h-[240px] lg:w-[620px] lg:h-[417px] xl:basis-[50%]"
         src="../assets/pictures/devise-info.png"
         alt="devise-info"
         @click="scrollToTop"
         loading="lazy"
       />
 
-      <div class="ml-auto mr-auto xl:ml-0 xl:mr-auto pl-[30px] pr-[30px] w-full xl:w-[640px]
+      <div class="ml-auto mr-auto xl:ml-0 xl:mr-auto pl-[30px] pr-[30px] w-full xl:basis-[50%]
       2xl:ml-0 2xl:mr-0 2xl:pl-0 2xl:pr-0 ">
 
         <h2
@@ -174,99 +175,53 @@ max-w-2xl: Максимальна ширина елемента на екран�
     <div class="flex justify-center items-center flex-col gap-[30px] xl:flex-row">
       <!-- Центральна колонка -->
       <div class="flex flex-col items-center pt-[40px] pb-[20px] relative bg-white w-full sm:w-[317px] lg:w-[407px] lg:h-[516px] rounded-[20px] shadow-xs order-1 lg:order-2">
-        <h2
-          class="mb-[21px] text-black text-[36px] lg:text-[48px] font-[700] leading-[1.1] text-center">
-          Креативи
-        </h2>
-        <p
-          class="lg:w-[283px] m-[0_30px_29px_30px]  lg:m-[0_64px_29px_64px] text-black text-[14px] lg:text-body-mobile font-[400] leading-[1.5] text-center">
-          Колекція оголошень для різних ніш та воронок
-        </p>
+        <h2 class="mb-[21px] text-black text-[36px] lg:text-[48px] font-[700] leading-[1.1] text-center">Креативи</h2>
+        <p class="lg:w-[283px] m-[0_30px_29px_30px] lg:m-[0_64px_29px_64px] text-black text-[14px] lg:text-body-mobile font-[400] leading-[1.5] text-center">Колекція оголошень для різних ніш та воронок</p>
         <div class="w-[250px] sm:w-[317px] lg:w-[352px] lg:h-[276px]">
           <Creatives />
         </div>
-
         <div class="absolute bottom-0 left-0 w-[36px] h-[36px] lg:w-[56px] lg:h-[56px]">
-          <ArrowUpRight class="absolute w-[36px] lg:w-[56px] h-[36px] lg:h-[56px] 
-          top-[0rem] ml-[214px]
-          sm:top-[0rem] sm:ml-[272px]
-          md:top-[0rem] md:ml-[272px]
-          lg:top-[-1rem] lg:ml-[317px]" />
+          <ArrowUpRight class="absolute w-[36px] lg:w-[56px] h-[36px] lg:h-[56px] top-[0rem] ml-[214px] sm:top-[0rem] sm:ml-[272px] md:top-[0rem] md:ml-[272px] lg:top-[-1rem] lg:ml-[317px]" />
         </div>
       </div>
       
       <!-- Ліва колонка -->
-      <div class="w-full sm:w-auto flex flex-col md:flex-row xl:flex-col items-center gap-[30px] order-2 lg:order-1">
-        <div class="shadow-custom-green bg-surface-100 w-full  sm:w-[335px] lg:w-[350px] xl:w-[410px] h-[180px] lg:h-[200px] rounded-[20px] shadow-xs">
-          <h3
-            class="p-[25px_0_25px_30px] lg:p-[31px_0_32px_30px] text-surface-900 text-[18px] font-[700] leading-[2]
-              lg:text-[20px] lg:leading-[1.3] text-left">
-            Креативів є
-          </h3>
-          <h1
-            class="text-green-700 text-[36px] lg:text-[48px] font-[700] leading-[1.1] text-center">
-            1.21 + В
-          </h1>
+      <div class="w-full flex flex-col md:flex-row xl:flex-col items-center justify-center  gap-[30px] order-2 lg:order-1">
+        <div class="creative-card shadow-custom-green bg-surface-100 w-full sm:w-[50%] lg:w-[410px] h-[180px] lg:h-[200px] rounded-[20px] shadow-xs">
+          <h3 class="p-[25px_0_25px_30px] lg:p-[31px_0_32px_30px] text-surface-900 text-[18px] font-[700] leading-[2] lg:text-[20px] lg:leading-[1.3] text-left">Креативів є</h3>
+          <h1 class="text-green-700 text-[36px] lg:text-[48px] font-[700] leading-[1.1] text-center">1.21 + В</h1>
         </div>
-
-        <div class="shadow-custom-green bg-surface-100 w-full  sm:w-[335px] lg:w-[350px] xl:w-[410px] h-[180px] lg:h-[200px] rounded-[20px] shadow-xs">
-          <h3
-            class="p-[25px_0_25px_30px] lg:p-[31px_0_32px_30px] text-surface-900 text-[18px] font-[700] leading-[2]
-              lg:text-[20px] lg:leading-[1.3] text-left">
-            Додано за місяць
-          </h3>
-          <h1
-            class="text-green-700 text-[36px] lg:text-[48px] font-[700] leading-[1.1] text-center">
-            39 + М
-          </h1>
+        <div class="creative-card shadow-custom-green bg-surface-100 w-full sm:w-[50%] lg:w-[410px] h-[180px] lg:h-[200px] rounded-[20px] shadow-xs">
+          <h3 class="p-[25px_0_25px_30px] lg:p-[31px_0_32px_30px] text-surface-900 text-[18px] font-[700] leading-[2] lg:text-[20px] lg:leading-[1.3] text-left">Додано за місяць</h3>
+          <h1 class="text-green-700 text-[36px] lg:text-[48px] font-[700] leading-[1.1] text-center">39 + М</h1>
         </div>
       </div>
       
       <!-- Права колонка -->
-      <div class="w-full sm:w-auto flex flex-col md:flex-row xl:flex-col items-center gap-[30px] order-3">
-        <div class="shadow-custom-green bg-surface-100 w-full  sm:w-[335px] lg:w-[350px] xl:w-[410px] h-[180px] lg:h-[200px] rounded-[20px] shadow-xs">
-          <h3
-            class="p-[25px_0_25px_30px] lg:p-[31px_0_32px_30px] text-surface-900 text-[18px] font-[700] leading-[2]
-              lg:text-[20px] lg:leading-[1.3] text-left">
-            Додано за тиждень
-          </h3>
-          <h1
-            class="text-green-700 text-[36px] lg:text-[48px] font-[700] leading-[1.1] text-center">
-            9 + М
-          </h1>
+      <div class="w-full flex flex-col md:flex-row xl:flex-col items-center justify-center gap-[30px] order-3">
+        <div class="creative-card shadow-custom-green bg-surface-100 w-full sm:w-[50%] lg:w-[410px] h-[180px] lg:h-[200px] rounded-[20px] shadow-xs">
+          <h3 class="p-[25px_0_25px_30px] lg:p-[31px_0_32px_30px] text-surface-900 text-[18px] font-[700] leading-[2] lg:text-[20px] lg:leading-[1.3] text-left">Додано за тиждень</h3>
+          <h1 class="text-green-700 text-[36px] lg:text-[48px] font-[700] leading-[1.1] text-center">9 + М</h1>
         </div>
-
-        <div class="shadow-custom-green bg-surface-100 w-full  sm:w-[335px] lg:w-[350px] xl:w-[410px] h-[180px] lg:h-[200px] rounded-[20px] shadow-xs">
-          <h3
-            class="p-[25px_0_25px_30px] lg:p-[31px_0_32px_30px] text-surface-900 text-[18px] font-[700] leading-[2]
-              lg:text-[20px] lg:leading-[1.3] text-left">
-            Креативів застосунків
-          </h3>
-          <h1
-            class="text-green-700 text-[36px] lg:text-[48px] font-[700] leading-[1.1] text-center">
-            37 + М
-          </h1>
+        <div class="creative-card shadow-custom-green bg-surface-100 w-full sm:w-[50%] lg:w-[410px] h-[180px] lg:h-[200px] rounded-[20px] shadow-xs">
+          <h3 class="p-[25px_0_25px_30px] lg:p-[31px_0_32px_30px] text-surface-900 text-[18px] font-[700] leading-[2] lg:text-[20px] lg:leading-[1.3] text-left">Креативів застосунків</h3>
+          <h1 class="text-green-700 text-[36px] lg:text-[48px] font-[700] leading-[1.1] text-center">37 + М</h1>
         </div>
       </div>
     </div>
   </div>
-</section>
-<!-- section-3 -->
+  </section>
+  <!-- section-3 -->
 
-<!-- section-4 -->
-<section class="mt-[60px] md:mt-[90px] lg:mt-[217px]">
+
+  <!-- section-4 -->
+  <section class="mt-[60px] md:mt-[90px] lg:mt-[217px]">
   <div class="container">
     <div class="flex justify-center items-center flex-col gap-[30px] xl:flex-row">
       <!-- Центральна колонка -->
       <div class="flex flex-col items-center pt-[40px] pb-[20px] relative bg-white w-full sm:w-[317px] lg:w-[407px] lg:h-[516px] rounded-[20px] shadow-xs order-1 lg:order-2">
-        <h2
-          class="mb-[21px] text-black text-[36px] lg:text-[48px] font-[700] leading-[1.1] text-center">
-          Програми
-        </h2>
-        <p
-          class="lg:w-[283px] m-[0_30px_29px_30px]  lg:m-[0_64px_29px_64px] text-black text-[14px] lg:text-body-mobile font-[400] leading-[1.5] text-center">
-          Відкривайте для себе рекламу по додатках
-        </p>
+        <h2 class="mb-[21px] text-black text-[36px] lg:text-[48px] font-[700] leading-[1.1] text-center">Програми</h2>
+        <p class="lg:w-[283px] m-[0_30px_29px_30px]  lg:m-[0_64px_29px_64px] text-black text-[14px] lg:text-body-mobile font-[400] leading-[1.5] text-center">Відкривайте для себе рекламу по додатках</p>
         <div class="w-[250px] sm:w-[317px] lg:w-[352px] lg:h-[276px]">
           <Program />
         </div>
@@ -281,65 +236,37 @@ max-w-2xl: Максимальна ширина елемента на екран�
       </div>
       
       <!-- Ліва колонка -->
-      <div class="w-full sm:w-auto flex flex-col md:flex-row xl:flex-col items-center gap-[30px] order-2 lg:order-1">
-        <div class="shadow-custom-orange bg-surface-100 w-full  sm:w-[335px] lg:w-[350px] xl:w-[410px] h-[180px] lg:h-[200px] rounded-[20px] shadow-xs">
-          <h3
-            class="p-[25px_0_25px_30px] lg:p-[31px_0_32px_30px] text-surface-900 text-[18px] font-[700] leading-[2]
-              lg:text-[20px] lg:leading-[1.3] text-left">
-            Усього просувалося
-          </h3>
-          <h1
-            class="text-orange-500 text-[36px] lg:text-[48px] font-[700] leading-[1.1] text-center">
-            398 + К
-          </h1>
+      <div class="w-full flex flex-col md:flex-row xl:flex-col items-center justify-center  gap-[30px] order-2 lg:order-1">
+        <div class="creative-card shadow-custom-orange bg-surface-100 w-full sm:w-[50%] lg:w-[410px] h-[180px] lg:h-[200px] rounded-[20px] shadow-xs">
+          <h3 class="p-[25px_0_25px_30px] lg:p-[31px_0_32px_30px] text-surface-900 text-[18px] font-[700] leading-[2] lg:text-[20px] lg:leading-[1.3] text-left">Усього просувалося</h3>
+          <h1 class="text-orange-500 text-[36px] lg:text-[48px] font-[700] leading-[1.1] text-center">398 + К</h1>
         </div>
 
-        <div class="shadow-custom-orange bg-surface-100 w-full  sm:w-[335px] lg:w-[350px] xl:w-[410px] h-[180px] lg:h-[200px] rounded-[20px] shadow-xs">
-          <h3
-            class="p-[25px_0_25px_30px] lg:p-[31px_0_32px_30px] text-surface-900 text-[18px] font-[700] leading-[2]
-              lg:text-[20px] lg:leading-[1.3] text-left">
-            Просувалося за місяць
-          </h3>
-          <h1
-            class="text-orange-500 text-[36px] lg:text-[48px] font-[700] leading-[1.1] text-center">
-            12 + К
-          </h1>
+        <div class="creative-card shadow-custom-orange bg-surface-100 w-full sm:w-[50%] lg:w-[410px] h-[180px] lg:h-[200px] rounded-[20px] shadow-xs">
+          <h3 class="p-[25px_0_25px_30px] lg:p-[31px_0_32px_30px] text-surface-900 text-[18px] font-[700] leading-[2] lg:text-[20px] lg:leading-[1.3] text-left">Просувалося за місяць</h3>
+          <h1 class="text-orange-500 text-[36px] lg:text-[48px] font-[700] leading-[1.1] text-center">12 + К</h1>
         </div>
       </div>
       
       <!-- Права колонка -->
-      <div class="w-full sm:w-auto  flex flex-col md:flex-row xl:flex-col items-center gap-[30px] order-3">
-        <div class="shadow-custom-orange bg-surface-100 w-full  sm:w-[335px] lg:w-[350px] xl:w-[410px] h-[180px] lg:h-[200px] rounded-[20px] shadow-xs">
-          <h3
-            class="p-[25px_0_25px_30px] lg:p-[31px_0_32px_30px] text-surface-900 text-[18px] font-[700] leading-[2]
-              lg:text-[20px] lg:leading-[1.3] text-left">
-            IOS-застосунків
-          </h3>
-          <h1
-            class="text-orange-500 text-[36px] lg:text-[48px] font-[700] leading-[1.1] text-center">
-            108 + К
-          </h1>
+      <div class="w-full flex flex-col md:flex-row xl:flex-col items-center justify-center gap-[30px] order-3">
+        <div class="creative-card shadow-custom-orange bg-surface-100 w-full sm:w-[50%] lg:w-[410px] h-[180px] lg:h-[200px] rounded-[20px] shadow-xs">
+          <h3 class="p-[25px_0_25px_30px] lg:p-[31px_0_32px_30px] text-surface-900 text-[18px] font-[700] leading-[2] lg:text-[20px] lg:leading-[1.3] text-left">IOS-застосунків</h3>
+          <h1 class="text-orange-500 text-[36px] lg:text-[48px] font-[700] leading-[1.1] text-center">108 + К</h1>
         </div>
-        <div class="shadow-custom-orange bg-surface-100 w-full  sm:w-[335px] lg:w-[350px] xl:w-[410px] h-[180px] lg:h-[200px] rounded-[20px] shadow-xs">
-          <h3
-            class="p-[25px_0_25px_30px] lg:p-[31px_0_32px_30px] text-surface-900 text-[18px] font-[700] leading-[2]
-              lg:text-[20px] lg:leading-[1.3] text-left">
-            Android-застосунків
-          </h3>
-          <h1
-            class="text-orange-500 text-[36px] lg:text-[48px] font-[700] leading-[1.1] text-center">
-            298 + К
-          </h1>
+        <div class="creative-card shadow-custom-orange bg-surface-100 w-full sm:w-[50%] lg:w-[410px] h-[180px] lg:h-[200px] rounded-[20px] shadow-xs">
+          <h3 class="p-[25px_0_25px_30px] lg:p-[31px_0_32px_30px] text-surface-900 text-[18px] font-[700] leading-[2] lg:text-[20px] lg:leading-[1.3] text-left">Android-застосунків</h3>
+          <h1 class="text-orange-500 text-[36px] lg:text-[48px] font-[700] leading-[1.1] text-center">298 + К</h1>
         </div>
       </div>
     </div>
   </div>
-</section>
-<!-- section-4 -->
+  </section>
+  <!-- section-4 -->
 
                 
-<!-- section-5 -->
-<section class="mt-[60px] md:mt-[90px] lg:mt-[192px] p-[40px_0_55px_0] lg:p-[60px_0_62px_0] bg-[#F8F8FA] rounded-[20px]">
+  <!-- section-5 -->
+  <section class="mt-[60px] md:mt-[90px] lg:mt-[192px] p-[40px_0_55px_0] lg:p-[60px_0_62px_0] bg-[#F8F8FA] rounded-[20px]">
   <div class="container">
     <h2
       class="mb-[62px] text-black text-[36px] lg:text-[48px] font-[700] leading-[1.1] lg:leading-[1.2] text-center">
@@ -392,8 +319,8 @@ max-w-2xl: Максимальна ширина елемента на екран�
       </div>
     </div>
   </div>
-</section>
-<!-- section-5 -->
+  </section>
+  <!-- section-5 -->
 
 
   <!-- section-6 -->
@@ -422,8 +349,8 @@ max-w-2xl: Максимальна ширина елемента на екран�
   </section>
   <!-- section-6 -->
 
-    <!-- section-7 -->
-    <section class="mt-[60px] md:mt-[90px] lg:mt-[200px] mb-[60px] md:mb-[90px] lg:mb-[200px]">
+  <!-- section-7 -->
+  <section class="mt-[60px] md:mt-[90px] lg:mt-[200px] mb-[60px] md:mb-[90px] lg:mb-[200px]">
     <div class="container">
       <!-- <div class="flex justify-between items-center mb-[60px]"> -->
         <div class="flex flex-col justify-center items-center">
@@ -551,13 +478,47 @@ export default {
   }
 }
 
-@media screen and (max-width: 2200px) {
+@media screen and (max-width: 3000px) {
   .container {
     max-width: 1340px;
   }
 }
 
-@media screen and (min-width: 1500px) {
+// @media screen and (min-width: 1279px) and (max-width: 1534px) {
+//   .section-2 {
+//     display: flex;
+//   }
+
+//   .section-2 .container {
+
+//     padding-left: 0;
+//     padding-right: 0;
+//     margin-left: 0;
+//     margin-right: 0;
+//   }
+
+//   .section-2 .container img {
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     width: auto;
+//     height: 100%;
+//     z-index: -1;
+//   }
+
+//   .section-2 .container > div {
+//     width: 50%;
+//     padding-left: 30px;
+//     padding-right: 30px;
+//   }
+
+//   .section-2 .container > div:nth-child(1) {
+//     padding-left: 0;
+//   }
+// }
+
+
+@media screen and (min-width: 1535px) and (max-width: 3000px) {
   .section-2 {
     display: flex;
     justify-content: center;
@@ -565,6 +526,13 @@ export default {
 
   .section-2 img {
     margin-left: auto;
+  }
+  .section-2 .container {
+    max-width: 1340px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .section-2 .ml-auto,
@@ -577,9 +545,16 @@ export default {
 @media screen and (min-width: 1280px) and (max-width: 1360px) {
 
   .creative-card {
-    width: 350px;
+    width: 370px;
   }
 
+}
+
+@media screen and (min-width: 487px) and (max-width: 639px) {
+
+  .creative-card {
+    width: 410px;
+  }
 }
 @media screen and (min-width: 374px) and (max-width: 639px) {
   .arrow {
@@ -596,6 +571,7 @@ export default {
     width: 317px;
   }
 }
+
 .icon {
   width: 42px;
   height: 42px;
@@ -619,5 +595,4 @@ export default {
     0px 49px 14px 0px #FD7E1400,
     0px 4px 4px 0px #00000040;
 }
-
 </style>
