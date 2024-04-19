@@ -1,11 +1,9 @@
 <template>
 
 <!-- sm	640px	@media (min-width: 640px) { ... }
-
 md	768px	@media (min-width: 768px) { ... }
 lg	1024px	@media (min-width: 1024px) { ... }
 xl	1280px	@media (min-width: 1280px) { ... }
-
 2xl	1536px	@media (min-width: 1536px) { ... } -->
 
 <!-- max-w-sm: Максимальна ширина елемента на екранах до шириною 640px.
@@ -81,30 +79,15 @@ max-w-2xl: Максимальна ширина елемента на екран�
   <!-- section-2 -->
   <section class="section-2 mt-[60px] md:mt-[90px] lg:mt-[180px] relative">
       
-
-  <div class="hidden lg:contents 2xl:hidden">
-    <div class="absolute top-[-54px] left-[50%] rotate-[89deg] z-0">
-      <img
-        class="self-start w-[786px] h-[532px] "
-        src="../assets/pictures/bg-pink.png"
-        alt="devise-info"
-        @click="scrollToTop"
-        loading="lazy"
-      />
+    <div class="hidden lg:block absolute top-0 right-0 rotate-[0deg] z-0">
+        <img
+          class="self-start w-[786px] h-[532px]"
+          src="../assets/pictures/second-bg-pink.png"
+          alt="devise-info"
+          @click="scrollToTop"
+          loading="lazy"
+        />
     </div>
-  </div>
-
-    <!-- <div class="hidden xl:contents 2xl:hidden">
-        <div class="absolute top-[47px] left-[800px] rotate-[90deg] z-0">
-      <img
-        class="w-[786px] h-[462px]"
-        src="../assets/pictures/bg-pink.png"
-        alt="devise-info"
-        @click="scrollToTop"
-        loading="lazy"
-      />
-    </div>
-      </div> -->
 
       <div class="xl:container flex flex-col gap-[30px] md:gap-[60px] xl:flex-row xl:items-center 2xl:justify-between xl:gap-[100px]">
       <img
@@ -354,8 +337,6 @@ max-w-2xl: Максимальна ширина елемента на екран�
 </section>
 <!-- section-4 -->
 
-
-
                 
 <!-- section-5 -->
 <section class="mt-[60px] md:mt-[90px] lg:mt-[192px] p-[40px_0_55px_0] lg:p-[60px_0_62px_0] bg-[#F8F8FA] rounded-[20px]">
@@ -365,7 +346,7 @@ max-w-2xl: Максимальна ширина елемента на екран�
       Загальна статистика
     </h2>
 
-    <div class="flex flex-col lg:flex-row gap-[40px] lg:gap-[80px] items-end relative">
+    <div class="flex flex-col lg:flex-row gap-[40px] lg:gap-[80px] justify-center items-end relative">
       <ArrowBig class=" arrow
       absolute rotate-[-61deg] top-[9.5rem] left-[-0.5rem] w-[272px]
       sm:rotate-[-55deg] sm:top-[9.5rem] sm-[6.5rem] sm:w-[350px]
@@ -456,19 +437,19 @@ max-w-2xl: Максимальна ширина елемента на екран�
 
         <ResponseCard v-for="index in 3" :key="index" />
       </div>
-      <ul class="mt-[60px] xl:mt-[0px] flex items-center justify-center xl:self-end gap-[30px]">
+        <ul class="mt-[60px] xl:mt-[0px] flex items-center justify-center xl:self-end gap-[30px]">
           <li>
             <button
-          class="flex justify-center items-center w-[42px] h-[42px] p-[10.5px_0px] rounded-[10px] border-green-800 border-[1px]">
-        <ArrowRight />
-        </button>
+              class="flex justify-center items-center w-[42px] h-[42px] p-[10.5px_0px] rounded-[10px] border-green-800 border-[1px]">
+              <ArrowRight />
+            </button>
           </li>
 
           <li>
             <button
-          class="flex justify-center items-center  w-[42px] h-[42px] p-[10.5px_0px] rounded-[10px] border-green-800 border-[1px] rotate-[-180deg]">
-        <ArrowRight />
-        </button>
+              class="flex justify-center items-center  w-[42px] h-[42px] p-[10.5px_0px] rounded-[10px] border-green-800 border-[1px] rotate-[-180deg]">
+              <ArrowRight />
+            </button>
           </li>
         </ul>
         </div>
